@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QFiction</title>
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'main/css/styles.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Q Fiction</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects"
+                >Available Books</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">QFiction</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            Your <strong>questions </strong>about
+            <strong>fiction</strong> novels, answered.
+          </h2>
+          <a class="btn btn-primary js-scroll-trigger" href="#about"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">How does it work?</h2>
+            <p class="text-white">
+              An extensive search is done on the source material to act as a
+              reference text and through
+              <a
+                class="text-info"
+                target="_blank"
+                href="https://arxiv.org/abs/1810.04805"
+                >BERT</a
+              >
+              language model, the answer is extracted from this abstract.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="img-fluid border mb-5"
+              src="{% static 'main/images/gandalf.jpg' %}"
+              alt="Lord Of The Rings"
+              height="300px"
+            />
+            <p class="quote">
+              "A wizard is never late, nor is he early. He arrives precisely
+              when he means to." -Gandalf
+            </p>
+          </div>
+
+          <div class="col-md-8">
+            <div class="ref-text text-left text-black">
+              "Gandalf is a protagonist in J. R. R. Tolkien's novels The Hobbit
+              and The Lord of the Rings. He is a wizard, one of the Istari
+              order, and the leader and mentor of the Fellowship of the Ring.
+              Tolkien took the name "Gandalf" from the Old Norse "Catalogue of
+              Dwarves" (Dvergatal) in the Völuspá. As a wizard and the bearer of
+              a Ring of Power, Gandalf has great power, but works mostly by
+              encouraging and persuading. He sets out as Gandalf the Grey,
+              possessing great knowledge, and travelling continually, always
+              focused on the mission to counter the Dark Lord Sauron. He is
+              associated with fire, his ring being Narya, the Ring of Fire, and
+              he both delights in fireworks to entertain the hobbits of the
+              Shire, and in great need uses fire as a weapon. As one of the
+              Maiar he is an immortal spirit, but being in a physical body on
+              Middle-earth, he can be killed in battle, as he is by the Balrog
+              from Moria. He is sent back to Middle-earth to complete his
+              mission, now as Gandalf the White and leader of the Istari." -
+              <span>
+                <a href="https://en.wikipedia.org/wiki/Gandalf"
+                  >Wikipedia</a
+                ></span
+              >
+            </div>
+            <br />
+            <div class="text-align-left d-flex text-info">Who is Gandalf?</div>
+            <div class="text-align-left d-flex ans">A wizard</div>
+            <br />
+            <div class="text-align-left d-flex text-info">
+              In which series Gandalf appears?
+            </div>
+            <div class="text-align-left d-flex ans">
+              Lord Of The Rings and The Hobbit
+            </div>
+            <br />
+          </div>
+          <p class="text-white mt-3">
+            The source material or abstract is extracted from books and other
+            internet resources automatically. All you have to do is ask!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Books-->
+    <section class="projects-section bg-light" id="projects">
+      <div class="container">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-4 col-lg-4">
+            <img
+              class="img-fluid mb-3 mb-lg-0"
+              src="{% static 'main/images/books.jpg' %}"
+              alt="Books"
+              height="200px"
+            />
+          </div>
+          <div class="col-xl-8 col-lg-8">
+            <div class="text-white mx-5 text-center text-lg-left">
+              <h4>Available Books</h4>
+              <p class="text-white-50 mb-0">
+                Following books are available for asking questions. Go ahead and
+                select one.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- One Row-->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-5">
+            <img
+              class="img-fluid border"
+              src="{% static 'main/images/lotr.png' %}"
+              alt="Lord Of The Rings"
+            />
+          </div>
+          <div class="col-lg-7">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-left"
+                >
+                  <h4 class="text-white">Lord Of The Rings</h4>
+                  <p class="mb-0 text-white-50">
+                    The Lord of the Rings is an epic high fantasy book by the
+                    English author and scholar J. R. R. Tolkien. Set in
+                    Middle-earth, the world at some distant time in the past,
+                    the story began as a sequel to Tolkien's 1937 children's
+                    book The Hobbit, but eventually developed into a much larger
+                    work. Written in stages between 1937 and 1949, The Lord of
+                    the Rings is one of the best-selling books ever written,
+                    with over 150 million copies sold.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-5">
+            <img
+              class="img-fluid border"
+              src="{% static 'main/images/harrypotter.jpg' %}"
+              alt="Harry Potter"
+            />
+          </div>
+          <div class="col-lg-7 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4 class="text-white">Harry Potter</h4>
+                  <p class="mb-0 text-white-50">
+                    Harry Potter is a series of seven fantasy novels written by
+                    British author J. K. Rowling. The novels chronicle the lives
+                    of a young wizard, Harry Potter, and his friends Hermione
+                    Granger and Ron Weasley, all of whom are students at
+                    Hogwarts School of Witchcraft and Wizardry.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 mr-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-5">
+            <img
+              class="img-fluid border"
+              src="{% static 'main/images/asoif.jpeg' %}"
+              alt="A Song Of Ice And Fire"
+            />
+          </div>
+          <div class="col-lg-7">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-left"
+                >
+                  <h4 class="text-white">A Song Of Ice And Fire</h4>
+                  <p class="mb-0 text-white-50">
+                    A Song of Ice and Fire is a series of epic fantasy novels by
+                    the American novelist and screenwriter George R. R. Martin.
+                    He began the first volume of the series, A Game of Thrones,
+                    in 1991, and it was published in 1996.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project Two Row-->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-5">
+            <img
+              class="img-fluid border"
+              src="{% static 'main/images/narnia.jpg' %}"
+              alt="The Chronicles of Narnia"
+            />
+          </div>
+          <div class="col-lg-7 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4 class="text-white">The Chronicles of Narnia</h4>
+                  <p class="mb-0 text-white-50">
+                    The Chronicles of Narnia is a series of fantasy novels by British author C. S. Lewis. Written by Lewis, illustrated by Pauline Baynes, and originally published in London between 1950 and 1956, The Chronicles of Narnia has been adapted for radio, television, the stage, and film.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 mr-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'main/js/scripts.js' %}"></script>
+  </body>
+</html>

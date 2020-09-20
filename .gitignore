@@ -1,0 +1,4 @@
+qfiction/*
+Q_Fiction/__pycache__/*
+*.pyc
+.DS_Store
