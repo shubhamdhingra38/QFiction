@@ -27,10 +27,10 @@
   </head>
   <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Q Fiction</a>
-        <button
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">QFiction</a>
+        <button 
           class="navbar-toggler navbar-toggler-right"
           type="button"
           data-toggle="collapse"
@@ -53,7 +53,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#signup">Custom</a>
             </li>
           </ul>
         </div>
@@ -96,6 +96,7 @@
 
         <div class="row">
           <div class="col-md-4">
+            
             <img
               class="img-fluid border mb-5"
               src="{% static 'main/images/gandalf.jpg' %}"
@@ -153,7 +154,7 @@
     </section>
 
     <!-- Available Books-->
-    <section class="projects-section bg-light" id="projects">
+    <section class="projects-section bg-dark" id="projects">
       <div class="container">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-4 col-lg-4">
@@ -189,7 +190,7 @@
                 <div
                   class="project-text w-100 my-auto text-center text-lg-left"
                 >
-                  <h4 class="text-white">Lord Of The Rings</h4>
+                  <h4 class="text-white onhover-expand">Lord Of The Rings</h4>
                   <p class="mb-0 text-white-50">
                     The Lord of the Rings is an epic high fantasy book by the
                     English author and scholar J. R. R. Tolkien. Set in
@@ -221,7 +222,7 @@
                 <div
                   class="project-text w-100 my-auto text-center text-lg-right"
                 >
-                  <h4 class="text-white">Harry Potter</h4>
+                  <h4 class="text-white onhover-expand">Harry Potter</h4>
                   <p class="mb-0 text-white-50">
                     Harry Potter is a series of seven fantasy novels written by
                     British author J. K. Rowling. The novels chronicle the lives
@@ -250,7 +251,7 @@
                 <div
                   class="project-text w-100 my-auto text-center text-lg-left"
                 >
-                  <h4 class="text-white">A Song Of Ice And Fire</h4>
+                  <h4 class="text-white onhover-expand">A Song Of Ice And Fire</h4>
                   <p class="mb-0 text-white-50">
                     A Song of Ice and Fire is a series of epic fantasy novels by
                     the American novelist and screenwriter George R. R. Martin.
@@ -280,7 +281,9 @@
                 <div
                   class="project-text w-100 my-auto text-center text-lg-right"
                 >
-                  <h4 class="text-white">The Chronicles of Narnia</h4>
+                <a href="#">
+                  <h4 class="text-white onhover-expand">The Chronicles of Narnia</h4>
+                </a>
                   <p class="mb-0 text-white-50">
                     The Chronicles of Narnia is a series of fantasy novels by British author C. S. Lewis. Written by Lewis, illustrated by Pauline Baynes, and originally published in London between 1950 and 1956, The Chronicles of Narnia has been adapted for radio, television, the stage, and film.
                   </p>
@@ -293,6 +296,17 @@
 
       </div>
     </section>
+
+    <section class="signup-section" id="signup">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-lg-8 mx-auto text-center">
+                  <h2 class="text-white mb-5">Couldn't find your favourite book? Use custom invocation.</h2>
+                  <a class="btn text-white btn-primary mx-auto">Try Now</a>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
