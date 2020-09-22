@@ -1,4 +1,8 @@
-{% extends "main/base.html" %} {% load static %} {% block body %}
+{% extends "main/base.html" %} {% load static %}
+{% block title %}
+<title>HP</title>
+{% endblock %}
+{% block body %}
 <div class="mb-5">
   <div class="col-md-12 text-center mt-5">
     <h2>Harry Potter</h2>
@@ -7,7 +11,7 @@
 
   <div class="row mx-2">
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/1/">
+      <a href="/ask-question/harrypotter/1/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp1.jpg' %}"
@@ -16,7 +20,7 @@
       </a>
     </div>
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/2/">
+      <a href="/ask-question/harrypotter/2/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp2.jpeg' %}"
@@ -25,7 +29,7 @@
       </a>
     </div>
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/3/">
+      <a href="/ask-question/harrypotter/3/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp3.jpeg' %}"
@@ -34,7 +38,7 @@
       </a>
     </div>
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/4/">
+      <a href="/ask-question/harrypotter/4/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp4.jpeg' %}"
@@ -47,7 +51,7 @@
   <!-- Row 2  -->
   <div class="row mx-2">
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/5/">
+      <a href="/ask-question/harrypotter/5/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp5.jpeg' %}"
@@ -56,7 +60,7 @@
       </a>
     </div>
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/6/">
+      <a href="/ask-question/harrypotter/6/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp6.jpeg' %}"
@@ -65,7 +69,7 @@
       </a>
     </div>
     <div class="col-md-3 mt-5">
-      <a href="/books/harry-potter/7/">
+      <a href="/ask-question/harrypotter/7/">
         <img
           class="img-fluid border border-white img-catalog"
           src="{% static 'main/images/hp7.jpg' %}"

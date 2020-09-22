@@ -23,7 +23,7 @@ def foobar(request, book_name, id):
     return HttpResponse(book_name + " and " + str(id))
 
 
-def ask_ques(request):
+def ask_ques(request, book_name, book_num):
     if request.method == "POST":
         data = json.loads(request.body.decode('utf-8'))
         question = data['question'].lower()
@@ -48,7 +48,7 @@ def ask_ques(request):
             print('\n{}Could not find any keywords, using all words...'.format(WARNING))
             sep_keywords = question.split(' ')
 
-        with open('./books/cleaned1.txt') as f:
+        with open(f'./books/{book_name}/cleaned{book_num}.txt') as f:
             contents = f.read().lower()
 
         all_keyword_occurences = []
@@ -97,4 +97,4 @@ def ask_ques(request):
 
         return JsonResponse({"ans": ans}, status=200)
 
-    return render(request, 'main/question.html')
+    return render(request, 'main/question.html', context={'book_name': book_name})

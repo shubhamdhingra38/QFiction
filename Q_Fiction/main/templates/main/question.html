@@ -52,6 +52,9 @@
 {% endblock %}
 
 {% block script %}
+<script>
+  let bookName="{{book_name}}"
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 <script src="{% static 'main/js/question.js' %}"></script>
 {% endblock %}

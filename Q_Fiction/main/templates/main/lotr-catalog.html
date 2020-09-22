@@ -1,0 +1,47 @@
+{% extends "main/base.html" %} {% load static %} 
+{% block title %}
+<title>LOTR</title>
+{% endblock %}
+{% block body %}
+<div class="mb-5">
+  <div class="col-md-12 text-center mt-5">
+    <h2>Lord Of The Rings</h2>
+  </div>
+  <!-- Row 1  -->
+
+  <div class="row mx-2">
+    <div class="col-md-4 mt-5">
+      <a href="/ask-question/lotr/1/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/lotr1.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-4 mt-5">
+      <a href="/ask-question/lotr/2/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/lotr2.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-4 mt-5">
+      <a href="/ask-question/lotr/3/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/lotr3.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  body {
+    background-color: rgba(2, 46, 28, 0.644);
+  }
+</style>
+{% endblock %}

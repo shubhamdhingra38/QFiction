@@ -1,0 +1,68 @@
+{% extends "main/base.html" %} {% load static %} {% block title %}
+<title>ASOIF</title>
+{% endblock %} {% block body %}
+<div class="mb-5">
+  <div class="col-md-12 text-center mt-5">
+    <h2>A Song Of Ice And Fire</h2>
+  </div>
+  <!-- Row 1  -->
+
+  <div class="row mx-2 justify-content-center">
+    <div class="col-md-3 mt-5">
+      <a href="/ask-question/asoif/1/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/got1.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/ask-question/asoif/2/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/got2.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/ask-question/asoif/3/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/got3.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Row 2 -->
+  <div class="row mx-2 justify-content-center">
+    <div class="col-md-3 mt-5">
+      <a href="/ask-question/asoif/4/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/got4.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/ask-question/asoif/5/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/got5.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+  </div>
+  <style>
+    body {
+      background-color: rgba(60, 60, 63, 0.548);
+    }
+  </style>
+  {% endblock %}
+</div>

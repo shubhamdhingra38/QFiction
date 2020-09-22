@@ -7,6 +7,13 @@ tokenizer = AutoTokenizer.from_pretrained(
 model = AutoModelForQuestionAnswering.from_pretrained(
     "mrm8488/bert-medium-finetuned-squadv2")
 
+# tokenizer = AutoTokenizer.from_pretrained(
+#     "/Users/shubham/Documents/QFiction/Q_Fiction/trained"
+# )
+# model = AutoModelForQuestionAnswering.from_pretrained(
+#     "../trained"
+# )
+
 
 def answer_question(question, answer_text, DEBUG=False):
     '''
@@ -101,7 +108,11 @@ def answer_question(question, answer_text, DEBUG=False):
 
 if __name__ == '__main__':
     abstract = '''
-    hing strange or mysterious, because they just didn’t hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursley s had a small son called Dudley and in their opinion
+    Gandalf is a protagonist in J. R. R. Tolkien's novels The Hobbit and The Lord of the Rings. He is a wizard, one of the Istari order, and the leader and mentor of the Fellowship of the Ring. Tolkien took the name "Gandalf" from the Old Norse "Catalogue of Dwarves" (Dvergatal) in the Völuspá.
+
+As a wizard and the bearer of a Ring of Power, Gandalf has great power, but works mostly by encouraging and persuading. He sets out as Gandalf the Grey, possessing great knowledge, and travelling continually, always focused on the mission to counter the Dark Lord Sauron. He is associated with fire, his ring being Narya, the Ring of Fire, and he both delights in fireworks to entertain the hobbits of the Shire, and in great need uses fire as a weapon. As one of the Maiar he is an immortal spirit, but being in a physical body on Middle-earth, he can be killed in battle, as he is by the Balrog from Moria. He is sent back to Middle-earth to complete his mission, now as Gandalf the White and leader of the Istari.
+
+Tolkien once described Gandalf as an angel incarnate; later, both he and other scholars have likened Gandalf to the Norse god Odin in his "Wanderer" guise. Others have described Gandalf as a guide-figure who assists the protagonist, comparable to the Cumaean Sibyl who assisted Aeneas in Virgil's The Aeneid, or to Virgil himself in Dante's Inferno; and as a Christ-figure, a prophet. 
     '''
-    question = 'Who is Mr. Dursley?'
+    question = 'Who is Gandalf?'
     print(answer_question(question, abstract))
