@@ -1,0 +1,83 @@
+{% extends "main/base.html" %} {% load static %} {% block body %}
+<div class="mb-5">
+  <div class="col-md-12 text-center mt-5">
+    <h2>Harry Potter</h2>
+  </div>
+  <!-- Row 1  -->
+
+  <div class="row mx-2">
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/1/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp1.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/2/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp2.jpeg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/3/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp3.jpeg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/4/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp4.jpeg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+  </div>
+
+  <!-- Row 2  -->
+  <div class="row mx-2">
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/5/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp5.jpeg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/6/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp6.jpeg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+    <div class="col-md-3 mt-5">
+      <a href="/books/harry-potter/7/">
+        <img
+          class="img-fluid border border-white img-catalog"
+          src="{% static 'main/images/hp7.jpg' %}"
+          alt="HP1"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  body {
+    background-color: rgba(5, 5, 102, 0.411);
+  }
+</style>
+{% endblock %}

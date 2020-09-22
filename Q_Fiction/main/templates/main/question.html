@@ -1,0 +1,57 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block body %}
+<div class="container mt-5">
+  <div class="ml-3">
+    <label for="input-ques">Question: </label>
+    <div class="row">
+      <div class="col-8">
+        <input placeholder="e.g. Who was headmaster at Hogwarts?" class="p-1 mx-2 w-100 my-0" type="text" name="question" id="input-ques">
+      </div>
+      <div class="col-4">
+        <button id="ask-btn" class="mx-2 my-0 btn-success btn-sm btn" style="padding: 9px !important" >Ask</button>
+      </div>
+    </div>
+    <div class="ans mt-3  " style="display: none;">
+        <p>Answer:</p>
+        <p id="p-ans">
+          
+        </p>  
+
+    </div>
+  </div>
+
+  <style>
+    body{
+      background:  rgba(4, 145, 163, 0.151);
+    }
+      .loader {
+        border: 10px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 10px solid #000000;
+        width: 50px;
+        height: 50px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+  </style>
+
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+<script src="{% static 'main/js/question.js' %}"></script>
+{% endblock %}
