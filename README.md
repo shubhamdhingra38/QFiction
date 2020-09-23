@@ -46,7 +46,7 @@ Books used for the project in `.txt` format can be found in this repository. Mer
 </details>
 
 ## Video
-https://youtu.be/N6OQ2bsTO2chttp://y2u.be/N6OQ2bsTO2c
+https://youtu.be/N6OQ2bsTO2c
 
 
 ## Technology Stack
